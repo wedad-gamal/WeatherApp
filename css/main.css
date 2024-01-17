@@ -1,0 +1,191 @@
+:root {
+  --main-color: #1e202b;
+  --secanary-color: #009ad8;
+  --light-color: #2d303d;
+  --lighter-color: #323544;
+  --dark-color: #262936;
+  --darker-color: #222530;
+  --font-color: #bfc1c8;
+  --main-font: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--font-color);
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.bg-light-color {
+  background-color: var(--light-color);
+}
+
+.bg-lighter-color {
+  background-color: var(--lighter-color);
+}
+
+.bg-dark-color {
+  background-color: var(--dark-color);
+}
+
+.box {
+  background-color: var(--main-color);
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.btn {
+  padding-inline: 40px;
+  padding-block: 10px;
+  border-radius: 40px;
+  background-color: var(--secanary-color);
+}
+
+/* navbar */
+.navbar .logo-text a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar .logo-text p {
+  font-size: 10px;
+  font-weight: 300;
+  color: #bfc1c8;
+}
+.logo-img img {
+  width: 64px;
+}
+.navbar .nav-link {
+  font-size: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  padding-inline: 30px !important;
+  padding-block: 5px;
+  color: #fff;
+  margin-inline: 10px;
+  transition: 0.1s;
+}
+
+.navbar .active {
+  border: 2px solid var(--secanary-color) !important;
+  color: var(--secanary-color) !important;
+}
+.navbar .nav-link:hover {
+  border: 2px solid var(--secanary-color);
+  color: var(--secanary-color);
+}
+/* main section */
+#main {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0) 50%,
+      rgba(0, 0, 0) 100%
+    ),
+    url("../images/banner.png");
+}
+@media only screen and (max-width: 992px) {
+  #main {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(0, 0, 0) 25%,
+        rgba(0, 0, 0) 100%
+      ),
+      url("../images/banner.png");
+  }
+}
+
+.locationBox {
+  margin-block: 30px;
+}
+.inputTxt {
+  background-color: var(--main-color);
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+/* temp cards */
+
+.temp-card {
+  width: 100%;
+}
+#main .date {
+  font-size: 14px;
+  padding: 10px;
+}
+
+#main .light-background .date {
+  background-color: var(--light-color);
+}
+#main .light-background .card-body {
+  color: var(--font-color);
+  background-color: var(--lighter-color);
+}
+
+#main .dark-background .date {
+  background-color: var(--darker-color);
+}
+#main .dark-background .card-body {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+.temp-card .card-body h4 {
+  font-size: 18px;
+}
+.temp-card .temp-now {
+  font-size: 90px;
+  color: #fff;
+  font-weight: 700;
+}
+.temp-card .large-icon-container {
+  width: 100px;
+  height: 100px;
+}
+.temp-card .meduim-icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temp-card .small-icon-container {
+  width: 20px;
+  height: 20px;
+}
+.temp-card .temperature .high-temp {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+}
+.temp-card .temperature .low-temp {
+  font-size: 16px;
+  font-weight: 300;
+}
+.temp-card .card-body .describe-temp {
+  color: var(--secanary-color);
+  font-size: 14px;
+  font-weight: 300;
+}
+#footer {
+  background-color: var(--lighter-color);
+}
+
+#footer .icon {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secanary-color);
+  background-color: var(--main-color);
+  padding: 15px;
+  margin: 5px;
+  border-radius: 50%;
+}
